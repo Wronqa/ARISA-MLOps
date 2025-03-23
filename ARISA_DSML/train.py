@@ -1,17 +1,4 @@
-"""Functions to train model."""
-from pathlib import Path
-
-from catboost import CatBoostClassifier, Pool, cv
-import joblib
-from loguru import logger
-import mlflow
-from mlflow.client import MlflowClient
-import optuna
-import pandas as pd
-import plotly.graph_objects as go
-from sklearn.metrics import f1_score, log_loss
-from sklearn.model_selection import train_test_split
-
+from ARISA_DSML.helpers import get_git_commit_hash
 from ARISA_DSML.config import (
     FIGURES_DIR,
     MODEL_NAME,
@@ -20,7 +7,26 @@ from ARISA_DSML.config import (
     categorical,
     target,
 )
-from ARISA_DSML.helpers import get_git_commit_hash
+import os
+import sys
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import f1_score, log_loss
+import plotly.graph_objects as go
+import pandas as pd
+import optuna
+from mlflow.client import MlflowClient
+import mlflow
+from loguru import logger
+import joblib
+from catboost import CatBoostClassifier, Pool, cv
+from pathlib import Path
+
+
+"""Functions to train model."""
+
+# Comment for test
+
+sys.path.append(os.path.abspath(".."))
 
 
 # comment to trigger workflow ver4
