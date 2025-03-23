@@ -25,6 +25,7 @@ from pathlib import Path
 """Functions to train model."""
 
 # Comment for test
+# Comment for test 2
 
 sys.path.append(os.path.abspath(".."))
 
