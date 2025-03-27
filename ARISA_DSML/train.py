@@ -30,6 +30,7 @@ from pathlib import Path
 # Comment for test 4
 # Comment for test 5
 # Comment for test 6
+# Comment for test 7
 # Comment for test actions
 
 sys.path.append(os.path.abspath(".."))
